@@ -1,0 +1,19 @@
+$info: #dbdcdd;
+$error:  #ff6d00;
+$white: #ffffff;
+$gray: #888a8d;
+$primary:#2196f3;
+$btn-hover:#f2fcff;
+$btn-border:#e8eaea;
+$box-hover:#eefcff;
+
+:export {
+  info: $info;
+  error: $error;
+  white: $white;
+  gray: $gray;
+  primary:$primary;
+  btn-hover:$btn-hover;
+  btn-border:$btn-border;
+  box-hover:$box-hover
+}

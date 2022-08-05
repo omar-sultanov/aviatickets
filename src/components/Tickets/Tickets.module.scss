@@ -1,0 +1,126 @@
+@import '/src/styles/fonts.scss';
+@import '/src/styles/colors.modules.scss';
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  .Tickets {
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    margin-bottom: 5px;
+    height: 130px;
+
+    .get_ticket {
+      display: flex;
+      flex-direction: column;
+      width: 160px;
+
+      img {
+        width: 145px;
+        margin-top: 5px;
+      }
+
+      button {
+        height: 50px;
+        background-color:$error;
+        border: none;
+        color:$white;
+        border-radius: 3px;
+        text-align: center;
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    .info_ticket {
+      width: 300px;
+      display: flex;
+      height: 100%;
+      padding-left: 10px;
+
+      .time {
+        border-left: solid $info 1px;
+        padding-left: 15px;
+        .typography {
+          display: flex;
+          justify-content: space-between;
+        }
+        h6,
+        h3,
+        p {
+          line-height: 1px;
+        }
+        h6 {
+          font-family: 'OpenSans';
+          font-style: normal;
+          font-weight: 600;
+          margin-top: 0;
+          
+        }
+
+        p {
+          font-family: 'OpenSans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          color: $gray;
+          margin-top: -10px;
+          
+        }
+
+        .hour_time {
+          display: flex;
+          margin-bottom: 0;
+          justify-content: center;
+          h3 {
+            font-family: 'OpenSans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+          }
+          .transplant {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 15px;
+            width: 120px;
+
+            span {
+              font-family: 'OpenSans';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 8px;
+              margin-top: 8px;
+
+              line-height: 0;
+            }
+
+            .icon {
+              position: relative;
+              width: 100%;
+              text-align: right !important;
+
+              i {
+                font-size: 8px;
+                color: $info;
+              }
+            }
+            .icon::before {
+              content: '';
+              position: absolute;
+              width: 103px;
+              height: 1px;
+              background-color: $info;
+              top: 58%;
+              left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
